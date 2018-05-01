@@ -11,7 +11,7 @@ $bid = $row['City'];
 $fid = $row['State'];
 
 if(isset($_POST['yesbutton'])){
-  $query="Delete from magazine where magazineid=:magazineid";
+  $query="Delete * from magazine where magazineid=:magazineid";
   $sql=$pdo->prepare($query);
   $sql->execute(
   array(
